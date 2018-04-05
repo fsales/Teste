@@ -2,7 +2,7 @@ import calculadora.*
 
 fun main(args: Array<String>) {
 
-    val lista = mutableListOf<String>("5", "+", "2","+","5","/","2","*","2","-","1","2")
+    val lista = mutableListOf<String>("5", "+", "2","+","5","/","2","X","2","-","1","2")
     var list = mutableListOf<Any>()
 
     for (t in lista) {
@@ -10,7 +10,7 @@ fun main(args: Array<String>) {
         val op = Operacao.from(t)
 
         if (op == null) {
-            list.add(Numero(t.toDoubleOrNull()))
+            if (t.toDoubleOrNull() != null) list.add(Numero(t.toDouble()))
         } else {
             list.add(op)
         }

@@ -1,5 +1,5 @@
 package calculadora
 
 interface Expressao{
-    fun calcula():Double?
+    fun calcula():Double
 }
