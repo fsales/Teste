@@ -2,7 +2,8 @@ import calculadora.*
 
 fun main(args: Array<String>) {
 
-    val lista = mutableListOf<String>("5", "+", "2","+","5","/","2","X","2","-","1","2")
+    //val lista = mutableListOf<String>("5", "+", "2","+","5","/","2","X","2","-","1","2")
+    val lista = mutableListOf<String>("5", "/", "10")
     var list = mutableListOf<Any>()
 
     for (t in lista) {
@@ -16,8 +17,10 @@ fun main(args: Array<String>) {
         }
     }
 
+    val exp:Expressao = Operacao.Soma
+exp.apply { ->  }
 
-    val listaNumero = mutableListOf<Numero>()
+    /*val listaNumero = mutableListOf<Numero>()
     var operador:Operacao? = null
     var expresao:Expressao? = null
 
@@ -29,12 +32,17 @@ fun main(args: Array<String>) {
 
             if (l is Numero) listaNumero.add(l)
 
-            if (listaNumero.size == 2) expresao = operador?.calculo(listaNumero.get(0), listaNumero.get(1))
+            if (listaNumero.size == 2) {
+                listaNumero.get(0), listaNumero.get(1)
+
+                expresao = operador?.calculo()
+            }
 
         } else {
             if (l is Numero)  expresao = operador?.calculo(expresao, l)
         }
     }
+    //expresao = Operacao.Porcentagem.calculo(expresao!!, Numero(10.0))
 
-    println(expresao?.calcula())
+    println(expresao?.calcula().rem(expresao?.calcula()))*/
 }
