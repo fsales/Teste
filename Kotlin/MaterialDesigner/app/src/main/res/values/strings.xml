@@ -8,4 +8,7 @@
     <string name="menu_carrinho">Carrinho</string>
     <string name="menu_config">Configurações</string>
     <string name="menu_sobre">Sobre</string>
+    <string name="desc_imagem_profile">Imagem Profile</string>
+    <string name="open_drawer">Abrir</string>
+    <string name="close_drawer">Fechar</string>
 </resources>
