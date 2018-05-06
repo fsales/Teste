@@ -7,6 +7,7 @@ import com.pkmmte.pkrss.Article
 import com.pkmmte.pkrss.Callback
 import com.pkmmte.pkrss.PkRSS
 import kotlinx.android.synthetic.main.activity_tela_recycler_view.*
+import kotlinx.android.synthetic.main.toolbar.*
 
 class TelaRecyclerViewActivity : AppCompatActivity(), Callback {
 
@@ -17,7 +18,8 @@ class TelaRecyclerViewActivity : AppCompatActivity(), Callback {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_tela_recycler_view)
-
+        setSupportActionBar(toolbar)
+        
         recyclerView.layoutManager = LinearLayoutManager(this)
         adapter = RecyclerAdapter(list)
         recyclerView.adapter = adapter
