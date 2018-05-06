@@ -11,4 +11,6 @@
     <string name="desc_imagem_profile">Imagem Profile</string>
     <string name="open_drawer">Abrir</string>
     <string name="close_drawer">Fechar</string>
+    <string name="titulo_alert_about">Sobre</string>
+    <string name="btn_acessar">ACESSAR</string>
 </resources>

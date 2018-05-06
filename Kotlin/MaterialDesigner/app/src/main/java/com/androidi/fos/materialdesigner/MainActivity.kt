@@ -9,7 +9,7 @@ import android.view.Menu
 import android.view.MenuItem
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.toolbar.*
-import org.jetbrains.anko.toast
+import org.jetbrains.anko.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -36,6 +36,11 @@ class MainActivity : AppCompatActivity() {
                 R.id.menu_botao -> {
                     startActivityForResult(
                             Intent(this@MainActivity, TelaBotoesActivity::class.java), SECOND_ACTIVITY_REQUEST_CODE)
+                    true
+                }
+                R.id.menu_recycler_view -> {
+                    startActivityForResult(
+                            Intent(this@MainActivity, TelaRecyclerViewActivity::class.java), SECOND_ACTIVITY_REQUEST_CODE)
                     true
                 }
                 else -> false
@@ -65,6 +70,18 @@ class MainActivity : AppCompatActivity() {
             when (item.itemId) {
                 R.id.search_menu -> {
                     toast("Buscar")
+                    true
+                }
+                R.id.about_menu -> {
+                    alert {
+                        title = getString(R.string.titulo_alert_about)
+                        customView {
+                            linearLayout {
+                                textView("Desenvolvido por:\nFábio Sales")
+                                padding = dip(16)
+                            }
+                        }
+                    }.show()
                     true
                 }
                 else -> super.onOptionsItemSelected(item)

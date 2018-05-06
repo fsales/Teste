@@ -22,32 +22,10 @@
         <menu>
 
             <item
-                android:title="Item menu outros"
-                android:id="@+id/menu_trash"
+                android:title="RecyclerView"
+                android:id="@+id/menu_recycler_view"
                />
         </menu>
 
     </item>
-
-
-    <!-- <group android:checkableBehavior="single" >
-
-         <item
-             android:id="menu_tela_login"
-             android:icon="@drawable/ic_key"
-             android:title="Tela Login"></item>
-
-         <item
-             android:id="menu_tela_botoes"
-             android:icon="@drawable/ic_input"
-             android:title="Tela Botões"></item>
-     </group>
-     <item android:title="Outros"
-         android:id="@+id/sumenu_outros">
-         <menu>
-             <item android:title="Lixeira" android:id="menu_trash" ></item>
-             <item android:title="Span" android:id="menu_span" ></item>
-
-         </menu>
-     </item>-->
 </menu>

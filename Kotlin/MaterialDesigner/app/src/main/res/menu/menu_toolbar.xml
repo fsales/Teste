@@ -12,10 +12,6 @@
         android:icon="@drawable/ic_cart"
         android:title="@string/menu_carrinho"
         app:showAsAction="always" />
-
-    <item android:title="@string/menu_config"
-        android:id="@+id/config_menu" />
-
     <item android:title="@string/menu_sobre"
         android:id="@+id/about_menu" />
 </menu>

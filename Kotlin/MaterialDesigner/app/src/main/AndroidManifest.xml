@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.androidi.fos.materialdesigner">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -17,7 +19,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".TelaBotoesActivity" />
-        <activity android:name=".TelaLoginActivity"></activity>
+        <activity android:name=".TelaLoginActivity" />
+        <activity android:name=".TelaRecyclerViewActivity"></activity>
     </application>
 
 </manifest>
