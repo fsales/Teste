@@ -43,6 +43,12 @@ class MainActivity : AppCompatActivity() {
                             Intent(this@MainActivity, TelaRecyclerViewActivity::class.java), SECOND_ACTIVITY_REQUEST_CODE)
                     true
                 }
+
+                R.id.menu_bottom_navigation -> {
+                    startActivityForResult(
+                            Intent(this@MainActivity, TelaBottomNavigationActivity::class.java), SECOND_ACTIVITY_REQUEST_CODE)
+                    true
+                }
                 else -> false
             }
 

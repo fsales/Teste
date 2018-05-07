@@ -20,7 +20,8 @@
         </activity>
         <activity android:name=".TelaBotoesActivity" />
         <activity android:name=".TelaLoginActivity" />
-        <activity android:name=".TelaRecyclerViewActivity"></activity>
+        <activity android:name=".TelaRecyclerViewActivity" />
+        <activity android:name=".TelaBottomNavigationActivity"></activity>
     </application>
 
 </manifest>

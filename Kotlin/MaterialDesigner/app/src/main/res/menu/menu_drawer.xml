@@ -25,6 +25,11 @@
                 android:title="RecyclerView"
                 android:id="@+id/menu_recycler_view"
                />
+
+            <item
+                android:title="Bottom Navigation"
+                android:id="@+id/menu_bottom_navigation"
+                />
         </menu>
 
     </item>
