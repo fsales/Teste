@@ -49,6 +49,12 @@ class MainActivity : AppCompatActivity() {
                             Intent(this@MainActivity, TelaBottomNavigationActivity::class.java), SECOND_ACTIVITY_REQUEST_CODE)
                     true
                 }
+                R.id.collapsing_layout -> {
+                    startActivityForResult(
+                            Intent(this@MainActivity, CollapsingLayoutActivity::class.java), SECOND_ACTIVITY_REQUEST_CODE)
+                    true
+                }
+
                 else -> false
             }
 

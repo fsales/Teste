@@ -21,7 +21,8 @@
         <activity android:name=".TelaBotoesActivity" />
         <activity android:name=".TelaLoginActivity" />
         <activity android:name=".TelaRecyclerViewActivity" />
-        <activity android:name=".TelaBottomNavigationActivity"></activity>
+        <activity android:name=".TelaBottomNavigationActivity" />
+        <activity android:name=".CollapsingLayoutActivity"></activity>
     </application>
 
 </manifest>

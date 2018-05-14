@@ -30,6 +30,12 @@
                 android:title="Bottom Navigation"
                 android:id="@+id/menu_bottom_navigation"
                 />
+
+
+            <item
+                android:title="Collapsing Layout"
+                android:id="@+id/collapsing_layout"
+                />
         </menu>
 
     </item>
